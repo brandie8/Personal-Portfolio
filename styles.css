@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Fjalla One", sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    padding-top: 70px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#description p {
+    font-size: 1.2em;
+    color: #555;
+    margin: 0;
+    padding: 2%;
+}
+
+#profile-pic {
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+}
+
+nav {
+    background-color: #34495e;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+}
+
+.projects-section-header {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-tile {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    width: 45%;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-tile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.swing {
+    color: #2c3e50;
+    font-size: 1.5em;
+    animation: swing 1s infinite;
+}
+
+.contact-links {
+    margin-top: 20px;
+}
+
+.contact-details {
+    font-size: 1.5em;
+    color: #2c3e50;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    color: #2c3e50;
+    padding: 20px 0;
+    background-color: #ecf0f1;
+}
+
+@keyframes swing {
+    0%, 100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    #description p {
+        font-size: 1em;
+    }
+
+    .project-tile {
+        width: 100%;
+    }
+
+    #profile-pic {
+        margin: 20px 0; 
+         max-height: 200px; 
+        object-fit: cover;
+    }
+}
